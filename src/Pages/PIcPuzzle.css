@@ -1,0 +1,45 @@
+.puzzle-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin: 20px auto;
+  border: 2px solid #444;
+  padding: 1%;
+  justify-content: center;
+}
+
+.tile {
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.tile.empty {
+  background: none;
+  cursor: default;
+}
+
+.win-banner {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 128, 0, 0.75);
+  color: #fff;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.reveal-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reveal {
+  width: 300px;
+  font-size: 150%;
+}

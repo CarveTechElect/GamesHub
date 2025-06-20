@@ -1,0 +1,66 @@
+:root {
+    background-color: rgb(207, 224, 230);
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    background-image: url(/src/tech3.jpg);
+    background-size: cover;
+    background-repeat: none;
+  }
+
+  .heading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 250%;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(86, 105, 167);
+    text-shadow: 2px 2px orange;
+  }
+
+  .controller {
+    width: 15%;
+  }
+  
+  .game-icons-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .maze,
+  .scrabble,
+  .pic-puzzle,
+  .num-puzzle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+  }
+
+  .icons {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .icons:hover {
+    border: 4px solid orange;
+    background-color: lightblue;
+    border-radius: 15%;
+    padding: 2%;
+  }
+
+  

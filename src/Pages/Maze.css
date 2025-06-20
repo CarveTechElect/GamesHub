@@ -1,0 +1,240 @@
+.maze-container {
+    display: flex;
+    border: 3px solid green;
+    width: 850px;
+    padding: 2%;
+    border-radius: 15px;
+    margin: 0px auto 0px auto;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.nav-button {
+    background-color: white;
+    color: navy;
+    font-weight: bold;
+    width: 70px;
+    height: 30px;
+    font-size: 10px;
+}
+
+.nav-button:hover {
+    color: white;
+    border: lightblue;
+}
+
+.panel-container {
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    padding: 0.5%;
+    margin: 0% 1.5% 0% 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.leftbutton_container,
+.rightbutton_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6%;
+    font-size: 200%;
+    color: navy;
+}
+
+.leftbutton_container:hover,
+.rightbutton_container:hover {
+    background-color: white;
+    opacity: 80%;
+}
+
+.temp_stage_update {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.prev_stage,
+.next_stage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aquamarine;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100%;
+    width: 48%;
+}
+
+.display_container {
+    display: absolute;
+    width: 80%;
+    height: 634px;
+    margin: 0% 1% 0% 0%;
+    z-index: 10;
+}
+
+.display_area {
+    position: relative;
+    width: 630px;
+    height: 630px;
+    border: none;
+}
+
+.car {
+    position: absolute;
+    margin: none;
+    width: 22px;
+    height: 16px;
+}
+
+.game_area_heading {
+    display: flex;
+    align-items: center;
+    padding: 6%;
+    margin: 0px 0px 40px 0px;
+    font-weight: bold;
+    font-size: 80%;
+    background-color: navy;
+    color: white;
+    border-radius: 10px;
+}
+
+.set_item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+select:optional {
+    background-color: rgb(245, 211, 149);
+    border-radius: 5px;
+    border: 2px solid navy;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 85%;
+    font-style: italic;
+    cursor: pointer;
+    height: 28px;
+}
+
+select:optional:hover {
+    border: 2px blue solid;
+    background-color: rgb(247, 110, 110);
+    padding: 2%;
+}
+
+label,
+.timer_name,
+.stage {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 90%;
+    font-weight: bold;
+    padding: 1%;
+}
+
+select {
+    padding: 1%;
+}
+
+.live_container,
+.timer_container,
+.stopwatch_container,
+.stage_container {
+    display: flex;
+    align-items: center;
+    margin: 5px 0px 5px 0px;
+}
+
+.live_count,
+.timer_count,
+.timer_name,
+.stage {
+    width: 60%;
+}
+
+.lives,
+.time_value,
+.timer_number,
+.stage_number {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    padding: 2.5px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 3px solid gray;
+    border-radius: 5px;
+    margin: 1px 0px 1px 0px;
+    background-color: rgb(245, 211, 149);
+}
+
+.control_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50% auto 1% auto;
+}
+
+.updown_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.left_button,
+.right_button,
+.up_button,
+.down_button {
+    display: flex;
+    margin: 3px;
+    width: 100%;
+}
+
+.game-canvas {
+    width: 630px;/* Ensures no extra scaling */
+    height: 630px;
+    display: block;
+    position: absolute;
+    z-index: 10;
+}
+
+.markscontainer {
+    display: flex;
+    position: absolute;
+    width: 630px;
+    height: 630px;
+}
+
+.startmark,
+.finishmark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    height: 28px;
+    width: 60px;
+    font-size: 70%;
+}
+
+.startmark {
+    background-color: rgb(127, 217, 127);
+    margin: 4px 50px 0px 0px;
+}
+
+.finishmark {
+    background-color: red;
+    margin: 598px 0px 0px 459px;
+}

@@ -1,0 +1,102 @@
+.crossword-container {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    width: 800px;
+    height: 800px;
+    padding: 1%;
+    margin: 0px auto 0px auto;
+    border: 2px solid navy;
+}
+
+.letters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200%;
+    background-color: rgb(234, 201, 139);
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    position: relative;
+}
+
+.letters.selected {
+    background-color: #a0d8ff;
+    transform: scale(1.05);
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+.letters.found {
+    background-color: whitesmoke;
+    border: 2px solid #8bc34a;
+    color: green;
+    font-weight: bold;
+}
+
+.word-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 950px;
+    text-align: left;
+    margin: 20px auto 0px auto;
+    font-size: 150%;
+    padding: 1%;
+    list-style-type: none;
+}
+
+.word-list .words {
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+.word-list .words.found {
+    text-decoration: line-through;
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.puzzle-info-container {
+    display: flex;
+    align-items: center;
+}
+
+.puzzle-info {
+    text-align: center;
+    margin: 10px auto;
+    font-size: 1.2em;
+  }
+
+  .puzzle-pages {
+    color: navy;
+  }
+
+  .words-count {
+    font-size: 120%;
+  }
+  
+  .completion-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    text-align: center;
+    z-index: 100;
+  }
+  
+  .completion-modal button {
+    background: #4CAF50; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+  }
